@@ -1,0 +1,25 @@
+package learning;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Just {
+
+	public static void main(String[] args) {
+ Phone p=new Phone("samsung",16,20000);
+ Phone p1=new Phone("aple",12,25000);
+ Phone p2=new Phone("redmi",18,30000);
+List<Phone>a =new ArrayList<Phone>();
+ a.add(p);
+ a.add(p1);
+ a.add(p2);
+ 
+List<Integer>l= a.stream().filter(i->i.price>22000).map(i->i.price).collect(Collectors.toList());
+System.out.println(l);
+ a.stream().filter(i->i.price>20000).forEach(i->System.out.println(i.name));
+	}
+}
+ 
