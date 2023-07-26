@@ -1,0 +1,31 @@
+package learning;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class Sam {
+	
+	public static void main(String[] args) 
+	{
+		Stream<Integer> s=Stream.of(1,2,3,4,5);
+		Optional<Integer> m=s.min((o1,o2)->o1.compareTo(o2));
+		Stream<Integer> s1=Stream.of(1,2,3,4,5);
+		Optional<Integer> m1=s1.max((o1,o2)->o1.compareTo(o2));
+		System.out.println("minimum");
+		System.out.println(" "+m.get());
+		System.out.println("maximum");
+		System.out.println(" "+m1.get());
+		Stream<Integer> s2=Stream.of(1,2,3,4,5);
+		System.out.println("firstvalue");
+		Optional<Integer> m2=s2.findFirst();
+		System.out.println(" "+m2);
+		Stream<Integer> s3=Stream.of(1,2,3,4,5);
+		System.out.println("greaterthan 2");
+		s3.filter(i->i>2).forEach(System.out::println);
+		Stream<Integer> s4=Stream.of(1,2,3,4,5);
+		System.out.println("adding 5 for each value");
+		s4.map(e->e+5).forEach(System.out::println);
+	}
+
+	
+	}
+        
