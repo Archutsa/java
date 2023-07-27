@@ -1,0 +1,19 @@
+package learning;
+
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+
+public class Reduce {
+
+	public static void main(String[] args) {
+      OptionalInt r=IntStream.range(1, 4).reduce((a,b)->a+b);
+      System.out.println(r);
+      System.out.println("range");
+      int r1=IntStream.range(1, 4).reduce(10,(a,b)->a+b);
+      System.out.println(r1);
+      System.out.println("rangeclosed");
+      int r2=IntStream.rangeClosed(1, 4).reduce(10,(a,b)->a+b);
+      System.out.println(r2);
+	}
+
+}
