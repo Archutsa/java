@@ -1,0 +1,28 @@
+package learning;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Use {
+
+	public static void main(String[] args) throws IOException {
+        BufferedWriter w=new BufferedWriter(new FileWriter("C:\\Users\\Admin\\Desktop\\archu\\abc"));
+       w.write("hi this is my world");
+       w.newLine();
+       w.write("it gives both happy and sad");
+       w.flush();
+       w.close();
+        BufferedReader r=new BufferedReader(new FileReader("C:\\Users\\Admin\\Desktop\\archu\\abc"));
+        Scanner s=new Scanner(r);
+        while(s.hasNext())
+        {
+        	System.out.println(s.nextLine());
+        }
+	}
+
+}
