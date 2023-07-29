@@ -1,0 +1,36 @@
+package learning;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Use {
+
+	public static void main(String[] args) 
+	{
+		HashMap m=new HashMap();
+		m.put("chennaiexp",100);
+		m.put("kovaiexp",200);
+		m.put("nellaiexp",300);
+		m.put("vagaiexp", 200);
+		System.out.println(m);
+		Set s=m.entrySet();
+		System.out.println(s);
+		Iterator i=s.iterator();
+		while(i.hasNext())
+		{
+			Object o=i.next();
+			Map.Entry e=(Map.Entry)o;
+			Object n=e.getKey();
+			Object t=e.getValue();
+			if(t.equals(200))
+			{
+			System.out.println(e);
+			
+			}
+		}
+	}
+
+}
