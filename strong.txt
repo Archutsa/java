@@ -1,0 +1,40 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Strong {
+
+	public static void main(String[] args) 
+	{
+		Scanner in =new Scanner (System.in);
+		System.out.println("enter the value:");
+		int a=in.nextInt();
+		int t=a;
+		int total=0;
+		while(t!=0)
+		{
+			int i=t%10;
+			int r=0;
+			 r=r*10+i;
+			 int fact=1;
+			 for(int j=1;j<=r;j++)
+			 {
+				 fact=fact*j;
+				 
+			 }
+			 total+=fact;
+			 t/=10;
+		}
+			
+		if(a==total)
+		{
+			System.out.println("strong");
+		}
+		else
+		{
+			System.out.println("not");
+		}
+		}
+		
+}
+
