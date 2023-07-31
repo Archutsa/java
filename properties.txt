@@ -1,0 +1,26 @@
+package learning;
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Properties;
+
+public class File {
+
+	public static void main(String[] args) throws IOException 
+	{
+		
+			Properties p=new Properties();
+			FileReader f=new FileReader("C:\\Users\\Admin\\eclipse-workspace\\learning\\test.properties");
+			p.load(f);
+			System.out.println(p);
+			p.setProperty("dosa", "30");
+			System.out.println(p);
+			FileWriter r=new FileWriter("C:\\Users\\Admin\\eclipse-workspace\\learning\test.properties");
+			p.store(r, "update");
+			
+		}
+		
+		
+}
