@@ -1,0 +1,29 @@
+package learning;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Use {
+
+	public static void main(String[] args) 
+	{
+		ArrayList  l=new ArrayList();
+		l.add(1);
+		l.add("zoya");
+		l.add(3);
+		l.add("archu");
+		System.out.println(l);
+		l.add(2, "shalu");
+		System.out.println(l);
+		ArrayList  a=new ArrayList();
+		a.addAll(l);
+		System.out.println(a);
+		System.out.println(a.get(3));
+		
+		
+			
+			
+		}
+		
+		
+}
