@@ -1,0 +1,24 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Fibnoacci {
+
+ public static void main(String[] args) {
+ Scanner in=new Scanner(System.in);
+ System.out.println(" enter the limit:");
+ int n=in.nextInt();
+ int a=-1,b=1,c;
+ for(int i=1;i<=n;i++)
+ {
+	 c=a+b;
+	 a=b;
+	 b=c;
+	 System.out.println(c);
+
+ }
+ 
+
+	}
+
+}
