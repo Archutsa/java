@@ -1,0 +1,43 @@
+package learning;
+
+ class D
+ {
+	private int length,breth;
+		
+	 int getlength()
+	 {
+		 return length ;
+	 }
+	 void setlength(int l)
+	 {
+		 length= l;
+
+	 }
+	 int getbreth()
+	 {
+		 return breth;
+	 }
+	 void setbreth(int b)
+	 {
+		 breth= b;
+
+	 }
+	 
+	 void display()
+	 {
+		 System.out.println("values:"+(length*breth));
+	 }
+ }
+
+public class Getset {
+	
+	
+
+	public static void main(String[] args) 
+	{
+		D d=new D();
+		d.setbreth(10);
+		d.setlength(20);
+		d.display();
+	}
+}
