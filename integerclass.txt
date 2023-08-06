@@ -1,0 +1,16 @@
+package learning;
+
+
+
+public class Integerclass {
+	
+	
+
+	public static void main(String[] args) 
+	{
+		Integer n=100;
+		String s=n.toString();
+		System.out.println("values:"+s.length());
+		
+		}
+}
