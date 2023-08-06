@@ -1,0 +1,40 @@
+package learning;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class Link {
+	
+	
+
+	public static void main(String[] args) 
+	{
+
+      LinkedList  l=new LinkedList();
+      l.add(10);
+      l.add("archu");
+      l.add(20);
+      l.add("zoya");
+      System.out.println(l);
+      System.out.println(l.getFirst());
+      l.addFirst("shalu");
+      l.addLast(50);
+      System.out.println( l.indexOf(20));
+      l.push(100);
+      System.out.println(l);
+      ArrayList a=new ArrayList();
+      a.add(100);
+      a.add(2);
+      a.add(20);
+      a.add(4);
+      System.out.println(a);
+     
+      
+      
+      
+		
+		}
+}
+
