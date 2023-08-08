@@ -1,0 +1,19 @@
+package learning;
+
+public class Phone {
+	String name;
+	int price;
+	int gb;
+	public String toString()
+	{
+		return " "+this.name+" "+this.gb+" "+this.price;
+		
+	}
+	Phone(String n,int g,int p )
+	{
+		this.name=n;
+		this.gb=g;
+		this.price=p;
+	}
+
+}
