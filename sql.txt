@@ -1,0 +1,12 @@
+create database s;
+use s;
+create table sam(no int(20),name varchar(50),dept varchar(50),adress varchar(90),city varchar(50),salary int(50));
+insert into sam values('1','archu','cs','raja street','germany','29000');
+insert into sam values('2','zoya','cs','rani street','america','25000');
+insert into sam values('3','shalu','eee','shell street','germany','35000');
+insert into sam values('4','ravi','eee','sway street','africa','26000');
+insert into sam values('5','zona','cs','call street','america','30000');
+select * from sam where city='germany';
+select * from sam where city in('america','africa');
+select name from sam where dept='cs';
+select * from sam where  city not in ('germany');
