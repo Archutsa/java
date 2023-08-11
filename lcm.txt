@@ -1,0 +1,24 @@
+package learning;
+
+public class Lcm {
+	public static void main(String[] args)
+	{
+		int a=32;
+		int b=45;
+		int s=0,t=0;
+		for(int i=1;i<=1000;i++)
+		{
+			s=a*i;
+			for(int j=1;j<=1000;j++)
+			{
+				t=b*j;
+				if(s==t)
+					break;
+			}
+			if(s==t)
+				break;
+			
+		}
+		System.out.println( " lcm of 32 and 45 :"+s);
+	}
+}
