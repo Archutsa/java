@@ -1,0 +1,17 @@
+create database c;
+use c;
+create table cust(id int(10),name varchar(50),city varchar(50), fav varchar(60));
+insert into cust values('1','archu','america','dress');
+insert into cust values('2','zoya','germany','beauty');
+insert into cust values('3','santhi','africa','bag');
+select * from cust;
+create table prod(id int(10),name varchar(50),city varchar(50));
+insert into prod values('1','bag','india');
+insert into prod values('2','dress','germany');
+insert into prod values('3','beauty','america');
+insert into prod values('4','saree','india');
+select * from prod;
+select prod.name,prod.city from prod inner join cust on  prod.city=cust.city;
+select cust .name,prod.id from cust left join prod on  prod.id=cust.id;
+select cust.name,cust.city,cust.fav from cust right join prod on prod .id=cust.id;
+select cust.id,cust.name,cust.city from cust cross join prod on prod.id=cust.id;
