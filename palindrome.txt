@@ -1,0 +1,28 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Palindrom {
+
+	public static void main(String[] args)
+	{
+		String o,r="";
+		Scanner in =new Scanner(System.in);
+		System.out.println("enter the text:");
+		o=in.nextLine();
+		int a=o.length();
+		for (int i=a-1;i>=0;i--)
+		r=r+o.charAt(i);
+		if(o.equals(r))
+			System.out.println("palindrom");
+			
+		else
+			System.out.println(" not");
+			
+		}
+		
+		
+	}		
+
+	
+
