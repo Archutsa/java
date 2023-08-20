@@ -1,0 +1,30 @@
+create database o;
+use o;
+create table product  (pid int primary key ,product varchar(50),country varchar(50));
+insert into product values('1','dress','germany');
+insert into product values('2','beauty','america');
+insert into product values('3','homepro','chain');
+select * from product;
+create table orders(id int(5),name varchar(50),country varchar(50),fpid int(5));
+insert into orders values('1','archu','russia','1');
+insert into orders values('2','zoya','india','2');
+insert into orders values('3','shalu','delhi','3');
+insert into orders values('3','shanthi','chennai','2');
+insert into orders values('5','archan','russia','3');
+select * from orders;
+select * from orders where fpid=2;
+select name,country from orders limit 3;
+select name from orders where name like 'a%' limit 2;
+select count(id) from orders group by country having count(id)>1;
+select o.id,o.name ,o.country from orders as o inner join  product as p on p.pid=o.id;
+select o.id,o.name,p.country from orders as o right join  product as p on p.pid=o.id;
+insert into product values('4','phone','india');
+insert into product values('5','sancks','russia');
+select o.id,o.name,p.country from orders as o left join  product as p on p.pid=o.id;
+alter table product
+add  addr varchar(20) default 'unassign';
+insert into product (pid ,addr) values('6','raja');
+select * from product;
+alter table orders
+add foreign key(fpid) references product (pid) ;
+select name  from orders where fpid=2 ;
