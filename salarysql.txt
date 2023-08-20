@@ -1,0 +1,8 @@
+create database t;
+use t;
+create table  salary( id int(5),name varchar(50),salary int(200));
+insert  into salary values('1','ar hu',35000);
+insert  into salary values('2','zoya',33000);
+insert  into salary values('3','shanthi',32000);
+insert  into salary values('4','zoya',30000);
+select distinct(salary),name from  salary order by salary  desc limit 1 offset 1;
