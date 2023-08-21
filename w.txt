@@ -1,0 +1,30 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Numberpalindrome {
+	public static void main(String[] args)
+	{
+		Scanner in=new Scanner(System.in);
+		System.out.println("enter the value");
+		int a=in.nextInt();
+		int t=a;
+		int r=0;
+		while(t>0)
+		{
+			int i=t%10;
+			 r=r*10+i;
+			t/=10;
+			
+		}
+		if(a==r)
+		{
+			System.out.println("palindrome");
+		}
+		else
+		{
+			System.out.println("not");
+		}
+	}
+
+}
