@@ -1,0 +1,36 @@
+package learning;
+
+
+
+public class Copycons
+ {
+
+	
+  public static void main(String[] args) 
+     {
+	A a =new A(10,20);
+	System.out.println("value:"+a.area());
+	A a1=new A(a);
+	System.out.println(" copy value:"+a.area());
+    }
+}
+
+class A
+{
+ int length ,breath;
+ A(int l,int b)
+ {
+	 this.length=l;
+	 this.breath=b;
+ }
+ A(A a1)
+ {
+	 length=a1.length;
+	 breath=a1.breath;
+ }
+ int area()
+ {
+	 return length*breath;
+ }
+}
+

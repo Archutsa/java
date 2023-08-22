@@ -1,0 +1,42 @@
+package learning;
+
+
+
+public class Getset
+ {
+
+	public static void main(String[] args)
+ {
+		A a =new A();
+	        a.setlength(10);
+		a.setbreath(20);
+		System.out.println("value:"+a.getlength()+" "+a.getbreath());
+		System.out.println("value:"+(a.getlength()+a.getbreath()));
+		
+		
+}
+}
+
+class A
+{
+  private int length,breath;
+  public int getlength()
+  {
+	  return length;
+  }
+  public void setlength(int l)
+  {
+	this.length=l;
+  }
+  public int getbreath()
+  {
+	  return breath;
+  }
+  public void setbreath(int b)
+  {
+	  this.breath =b;
+  }
+  
+	
+}
+

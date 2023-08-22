@@ -1,0 +1,39 @@
+package learning;
+
+
+
+public class Nested
+ {
+
+	public static void main(String[] args) 
+{
+		
+	A a=new A(10,20);	
+	a.area();    
+		
+		
+}
+}
+
+class A
+{
+  int length,breath;
+   A(int l,int b)
+   {
+	   this.length=l;
+	   this.breath=b;
+   }
+  int largest()
+  {
+	  if(length>breath)
+		  return length;
+	  else
+		  return breath;
+  }
+  void area()
+  {
+	  int c=largest();
+	  System.out.println(c);
+  }
+}
+
