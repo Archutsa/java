@@ -1,0 +1,66 @@
+package learning;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Countletter {
+
+	public static void main(String[] args) {
+ String s="aaaaaaaaaaabbbbbcccddddddddd";
+ int count=1;
+ int least=1;
+ char[] a=s.toCharArray();
+ HashMap <Character,Integer> m=new HashMap();
+ for(char c:a)
+ {
+	 if(m.containsKey(c))
+	 {
+		 m.put(c,m.get(c)+1);
+	 }
+	 else
+	 {
+		 m.put(c,1);
+	 }
+ }
+ System.out.println(m);
+ Set s1=m.entrySet();	
+ Set< Map.Entry<Character,Integer>> w=s1;
+ for( Map.Entry<Character, Integer>v:w)
+	 {
+	  if(v.getValue()>count)
+	  {
+		count=v.getValue();
+	  }
+	 }
+	 least=count;
+	 for( Map.Entry<Character, Integer>v:w)
+	 {
+	 if(v.getValue()<least)
+	 {
+		least=v.getValue(); 
+	 }
+ 
+	 }
+ for( Map.Entry<Character, Integer>d:w)
+{
+	if(d.getValue()==count) 
+	{
+		System.out.println("largest count letter   "+d.getKey()+"  :"+d.getValue());
+	}
+ 
+	 if(d.getValue()==least)
+	{
+		
+		System.out.println("smallest count letter  "+d.getKey()+"  :"+d.getValue());
+		
+	}
+	
+ }
+ 
+	}
+
+}
+
