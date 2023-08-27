@@ -1,0 +1,45 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Emirp
+ {
+
+	public static void main(String[] args)
+ {
+    Scanner in=new Scanner(System.in);
+    System.out.println("enter the number:");
+    int n=in.nextInt();
+    int temp=n;
+    int count=0,next=0,r=0,t;
+    while(temp>0)
+    {
+   	t=temp%10;
+   	r=r*10+t;
+    	temp/=10;
+    	//System.out.println(r);
+    }
+    for(int i=1;i<=n;i++)
+    {
+    	if(n%i==0)
+    	
+    	   count++;
+    	
+    }
+    for(int i=1;i<=r;i++)
+    {
+    	if(r%i==0)
+    	  next++;
+    }
+    if(count==next)
+    {
+    	System.out.println(n +"emirp no");
+    }
+    else 
+    {
+    	System.out.println(n+"npt emirp no");
+    	
+    }
+
+ }
+}
