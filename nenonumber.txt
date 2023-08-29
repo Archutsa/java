@@ -1,0 +1,27 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Neno 
+{
+public static void main(String[] args) 
+{
+  Scanner in=new Scanner(System.in);
+  System.out.println("enter the number:");
+  int n=in.nextInt();
+  int t=n;
+  int s=n*n;
+  
+  double r=Math.sqrt(s);
+  
+  if(t==r)
+  {
+	  System.out.println("it is neno number");
+  }
+  else
+  {
+	  System.out.println("it is not neno number");
+  }
+}
+
+}
