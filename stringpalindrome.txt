@@ -1,0 +1,27 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Palindrome 
+{
+
+	public static void main(String[] args) 
+{
+      Scanner in=new Scanner(System.in);
+      System.out.println("enter  the name:");
+      String s=in.next();
+      StringBuilder sb=new StringBuilder(s);
+      sb.reverse();
+      String rev=sb.toString();
+      if(s.equals(rev))
+      {
+    	  System.out.println("it is palindrome");
+      }
+      else
+      {
+    	  System.out.println("it is not palindrome");
+      }
+      
+}
+
+}
