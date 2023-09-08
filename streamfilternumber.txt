@@ -1,0 +1,18 @@
+package learning;
+
+import java.util.Scanner;
+import java.util.stream.IntStream;
+
+public class StreamFilter 
+{
+public static void main(String[] args) 
+{
+ Scanner in=new Scanner(System.in);
+ System.out.println("enter the number");
+ int n=in.nextInt();
+ String s=Integer.toString(n);
+ IntStream.range(1, 500).mapToObj(p->Integer.toString(p)).filter(p->p.contains(s)).forEach(System.out::println);
+	
+}
+
+}
