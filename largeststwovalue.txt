@@ -1,0 +1,41 @@
+package learning;
+
+public class SecondLargest
+ {
+
+	public static void main(String[] args) 
+{
+     int a[]= {10,20,30,40,50,60,70,90,100,80};
+     int l=a[0];
+     int small=0;
+     for(int i=0;i<a.length;i++)
+     {
+    	 if(a[i]>l)
+    	 {
+    		 l=a[i];
+    	 }
+     }
+     System.out.println("first largest value:"+l);
+     small=l;
+     
+     for(int i=0;i<a.length;i++)
+     {
+    	 if(a[i]<small)
+    	 {
+    		 small=a[i];
+    	 }
+     }
+    
+     for(int i=0;i<a.length;i++)
+     {
+    	 if(a[i]>small && a[i]!=l)
+    	 {
+    		 small=a[i];
+    	 }
+     }
+     System.out.println("second largest value:"+small);
+     
+     
+}
+
+}
