@@ -1,0 +1,30 @@
+package learning;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Filterstream 
+{
+
+	public static void main(String[] args) 
+{
+    List<Integer> name= new ArrayList();
+    name.add(2);
+    name.add(3);
+    name.add(4);
+    name.add(5);
+    
+    List r=name.stream().filter(s->s%2==0).collect(Collectors.toList());
+    r.forEach(System.out::println);
+    List<String> n=new ArrayList();
+    n.add("Zoya");
+    n.add("Santhi");
+    n.add("Archu");
+    List<String> a=n.stream().filter(x->x.startsWith("S")).collect(Collectors.toList());
+    a.forEach(System.out::println);
+    List<String> s=n.stream().sorted().collect(Collectors.toList());
+    s.forEach(System.out::println);
+}
+
+}
