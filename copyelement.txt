@@ -1,0 +1,22 @@
+package learning;
+
+public class CopyElement 
+{
+
+	public static void main(String[] args) 
+{
+       int a[]= {10,20,30,40,50};
+       int c[]=new int[a.length];
+       for(int i=0;i<a.length;i++)
+        {
+    	   c[i]=a[i];
+        }
+       System.out.println("new array:");
+       for(int i=0;i<c.length;i++)
+        {
+    	   System.out.println(c[i]);
+        }
+       
+}
+
+}
