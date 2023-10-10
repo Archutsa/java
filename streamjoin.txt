@@ -1,0 +1,22 @@
+package learning;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Streamjoin 
+{
+
+public static void main(String[] args)
+{
+    List<String> s=Arrays.asList("india","america","russia");
+    String c=s.stream().map(x->x.toUpperCase()).collect(Collectors.joining(","));
+    System.out.println(c);
+    List<String> a=s.stream().filter(r->r.length()>5).map(t->t.toUpperCase()).collect(Collectors.toList());
+    a.forEach(System.out::println);
+    long count=s.stream().filter(d->d.length()>5).count();
+    System.out.println(count);
+	
+}
+
+}
