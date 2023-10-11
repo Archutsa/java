@@ -1,0 +1,88 @@
+package learning;
+
+public class Studentname 
+{
+	int rollno;
+	String name;
+	int score;
+	Studentname(int r,String n,int s)
+	{
+		this.rollno=r;
+		this.name=n;
+		this.score=s;
+	}
+	 int getrollno()
+	 {
+		 return rollno;
+	 }
+	 void setrollno(int r)
+	 {
+		 this.rollno=r;
+	 }
+	 String getname()
+	 {
+		 return name;
+	 }
+	 void setrollno(String n)
+	 {
+		 this.name=n;
+	 }
+	 int getscore()
+	 {
+		 return score;
+	 }
+	 void setscore(int s)
+	 {
+		 this.score=s;
+	 }
+	public String toString()
+	{
+		return " "+this.rollno+" "+this.name+" "+this.score;
+	}
+
+	
+}
+
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+public class Streamcompare
+{
+
+	public static void main(String[] args) 
+{
+		Studentname s=new Studentname(1,"archu",150);
+		Studentname s1=new Studentname(2,"zoya",350);
+		Studentname s2=new Studentname(3,"rithi",550);
+		Studentname s3=new Studentname(4,"vino",400);
+		Studentname s4=new Studentname(5,"yamini",500);
+		Studentname s5=new Studentname(6,"sangee",505);
+		List<Studentname>l=new ArrayList<Studentname>();
+		l.add(s);
+		l.add(s1);
+		l.add(s2);
+		l.add(s3);
+		l.add(s4);
+		l.add(s5);
+	List<Studentname> n=l.stream().filter(x->x.getname().startsWith("y")).collect(Collectors.toList());
+	n.forEach(System.out::println);
+	List<Studentname> a=l.stream().filter(x->x.getscore()>(500)).collect(Collectors.toList());
+	a.forEach(System.out::println);
+	List<Studentname> r=l.stream().filter(x->x.getscore()>500).limit(2).collect(Collectors.toList());
+	System.out.println(r);
+	List<String> c=l.stream().map(v->v.getname()).sorted().collect(Collectors.toList());
+	System.out.println(c);
+	List<Studentname> v=l.stream().sorted(Comparator.comparing        (Studentname::getscore,Comparator.reverseOrder())).collect(Collectors.toList());
+	System.out.println(v);
+		
+}
+
+}
+
+
+
+
