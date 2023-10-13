@@ -1,0 +1,20 @@
+package learning;
+
+import java.util.Arrays;
+import java.util.List;
+
+
+public class MinMax 
+{
+
+	public static void main(String[] args)  
+{
+		  List<Integer> l=Arrays.asList(100,2,40,55);
+		  Integer min=l.stream().min((s1,s2)-> s1.compareTo(s2)).get();
+		  System.out.println(min);
+		  Integer max=l.stream().max((s1,s2)-> s1.compareTo(s2)).get();
+		  System.out.println(max);
+		
+}
+
+}
