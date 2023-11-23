@@ -1,0 +1,20 @@
+package learning;
+
+import java.util.EnumSet;
+import java.util.Set;
+
+public class Enumset
+{
+ enum days
+  {
+    sunday,monday,tuesday,wedbesday,thursday,friday,startday;
+  }
+
+public static void main(String[] args) 
+{
+    Set<days> s=EnumSet.allOf(days.class);
+    System.out.println("weeks:"+s);
+    Set<days>s1=EnumSet.of(days.monday,days.friday);
+    System.out.println("day:"+s1);
+}
+}
