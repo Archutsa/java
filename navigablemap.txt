@@ -1,0 +1,21 @@
+package learning;
+
+import java.util.NavigableMap;
+import java.util.TreeMap;
+
+public class Navigablemap
+{
+public static void main(String[] args) 
+{
+   NavigableMap<Integer,String>m=new TreeMap<Integer,String>();
+   m.put(100,"archu" );
+   m.put(101,"santhi" );
+   m.put(102,"zoya" );
+   m.put(103,"weing" );
+   System.out.println("descending:"+m.descendingKeySet());
+   System.out.println("descending all:"+m.descendingMap());
+   System.out.println("head map:"+m.headMap(102));
+   System.out.println("tail map:"+m.tailMap(102));
+   System.out.println("sub:"+m.subMap(100, 103));
+}
+}
