@@ -1,0 +1,25 @@
+package learning;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+
+public class Mapstream 
+{
+
+public static void main(String[] args) 
+{
+   HashMap<Integer,String> m=new HashMap<Integer,String>();
+   m.put(5, "cat");
+   m.put(4, "ball");
+   m.put(1, "apple");
+   m.put(2, "elephant");
+   m.put(3, "dog");
+   System.out.println("By key ");
+   m.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
+   System.out.println("By value");
+   m.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+   
+   
+}
+}
