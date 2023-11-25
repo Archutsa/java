@@ -1,0 +1,29 @@
+package learning;
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Mapreplace
+{
+public static void main(String[] args) 
+{
+   HashMap<Integer,String> m=new HashMap<Integer,String>();
+   m.put(1, "aa");
+   m.put(2, "bb");
+   m.put(3, "cc");
+   m.put(4, "ee");
+   m.put(5, "dd");
+   System.out.println("before removing:");
+   Set<Entry<Integer,String>> s=m.entrySet();
+   for(Entry<Integer, String> e:s)
+    {
+      System.out.println(e.getKey()+ " "+e.getValue());
+    }
+   m.replace(3,"cc","gg");
+   System.out.println("after replacing:");
+   for(Entry<Integer, String> e:s)
+     {
+       System.out.println(e.getKey()+ " "+e.getValue());
+    }
+}
+}
