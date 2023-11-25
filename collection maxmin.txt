@@ -1,0 +1,21 @@
+package learning;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class MaxMin 
+{
+public static void main(String[] args) 
+{
+     List<Integer> l=new ArrayList<Integer>();
+     l.add(1);
+     l.add(3);
+     l.add(2);
+     l.add(16);
+     l.add(20);
+    System.out.println("maximum value : "+Collections.max(l));
+    System.out.println("maximum value : "+Collections.min(l));
+    
+}
+}
