@@ -1,0 +1,25 @@
+package learning;
+
+import java.util.EnumMap;
+import java.util.Map.Entry;
+
+
+public class Enummap 
+{
+public enum Days
+  {
+    sunday,monday,tuesday,wedbesday,thursday,friday,startday;
+  }
+
+public static void main(String[] args) 
+{
+     EnumMap<Days,Integer> e=new EnumMap<Days,Integer>(Days.class);
+     e.put(Days.sunday, 1);
+     e.put(Days.monday, 2);
+     e.put(Days.friday, 3);
+     for(Entry<Days, Integer> m:e.entrySet())
+      {
+    	  System.out.println(m.getKey()+" "+m.getValue());
+      }
+}
+}
