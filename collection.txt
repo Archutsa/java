@@ -1,0 +1,21 @@
+package learning;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Collectionclass 
+{
+public static void main(String[] args) 
+{
+     List<String> l=new ArrayList<String>();
+     l.add("c");
+     l.add("c++");
+     l.add("java");
+     System.out.println("collections:"+l);
+     Collections.addAll(l,"python");
+     String s[]= {"HTML","CSS"};
+     Collections.addAll(l,s);
+     System.out.println("After collections"+l);
+}
+}
