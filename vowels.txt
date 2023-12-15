@@ -1,0 +1,20 @@
+package learning;
+
+
+public class Vowels 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		
+		System.out.println(isvowels("Hello"));
+		System.out.println(isvowels("Hi"));
+		
+	}
+	public static boolean isvowels(String input)
+	{
+			return input.toLowerCase().matches(".*[aeiou].*");
+	}
+		
+}
