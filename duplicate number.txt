@@ -1,0 +1,47 @@
+package learning;
+
+import java.util.HashMap;
+
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Duplicate 
+{
+
+	public static void main(String[] args) 
+	{
+		int a[]= {1,2,3,4,5,6,2,3,4,5,7};
+		int c[]=a.clone();
+		HashMap<Integer,Integer> m=new HashMap<Integer,Integer>();
+		
+		for(int d:c)
+		{
+			if(m.containsKey(d))
+			{
+				m.put(d,m.get(d)+1);
+			}
+			else
+			{
+				m.put(d, 1);
+			}
+		}
+		Set <Entry<Integer,Integer>> s=m.entrySet();
+		for(Entry<Integer,Integer> e:s)
+		{
+			if(e.getValue()==1) 
+			{
+				System.out.println(e.getKey());
+			}
+			else
+			{
+				System.out.println(e.getKey());
+			}
+		}
+		
+		
+		
+	
+}
+		
+		
+}
