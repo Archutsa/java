@@ -1,0 +1,35 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Numberpali
+{
+
+	public static void main(String[] args) 
+	{
+		
+		
+	for(int i=100;i<200;i++)
+	 {
+			int t=i;
+			int r=0;
+		
+		 while(t!=0)
+		  {
+			int k=t%10;
+			r=r*10+k;
+			t/=10;
+			
+		  }
+		
+		 if(i==r)
+		  {
+			System.out.println(i);
+		  }
+	}
+
+		
+}
+		
+		
+}
