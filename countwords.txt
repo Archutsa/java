@@ -1,0 +1,22 @@
+package learning;
+
+
+
+public class Countwords
+{
+
+	public static void main(String[] args) 
+{
+		String s="this is my life";
+		String[] c=s.split(" ");
+		int count=0;
+		
+		for(String a:c)
+		 {
+                   count=count+1;
+		 }
+		System.out.println( "number of words:   "+count);
+		
+	
+}
+}
