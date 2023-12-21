@@ -1,0 +1,29 @@
+package learning;
+
+
+import java.util.Scanner;
+
+public class NumberOf Rotate
+{
+
+	public static void main(String[] args) 
+	{
+		String s="Java J2ee Struts Hibernate";
+		String s1=s.replaceAll("\\s", "");
+		String[] c=s.split(" ");
+		System.out.println(s1);
+		Scanner in= new Scanner(System.in);
+		System.out.println("Enter the number of rotate: ");
+		int n=in.nextInt();
+		for(int i=n;i<c.length;i++)
+		{
+			System.out.print(c[i]);
+		}
+		for(int i=0;i<n;i++)
+		{
+			System.out.print(c[i]);
+		}
+	}
+		
+		
+}
