@@ -1,0 +1,25 @@
+package learning;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class DuplicateRemove
+ {
+
+	public static void main(String[] args) 
+	{
+		ArrayList<Integer> a=new ArrayList<Integer>();
+		a.add(1);
+		a.add(2);
+		a.add(3);
+		a.add(4);
+		a.add(2);
+		a.add(3);
+		System.out.println("Before removing duplicate: "+a);
+		HashSet<Integer> s=new HashSet<Integer>();
+		s.addAll(a);
+		System.out.println("After removing duplicate: "+s);
+	}
+		
+		
+}
