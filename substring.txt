@@ -1,0 +1,53 @@
+package learning;
+
+
+import java.util.Scanner;
+
+public class SubString 
+{
+
+	public static void main(String[] args) 
+{
+		Scanner in=new Scanner(System.in);
+		System.out.println("enter the string : ");
+		String s=in.next();
+		int len=s.length()-1;
+		
+		char[] c=s.toCharArray();
+		for(char a:c)
+		{
+			System.out.println(a);
+		}
+		for(int i=0;i<s.length();i++)
+		{
+			for(int j=i;j<=i+1;j++)
+			{
+				if(i==len)
+					break;
+				System.out.print(c[j]);
+				
+			}
+			System.out.println();
+		}
+		for(char d:c)
+		{
+			System.out.print(d);
+		}
+	
+	  
+	
+	
+}
+}
+
+Output:
+
+enter the string : 
+
+fun
+f
+u
+n
+fu
+un
+fun
