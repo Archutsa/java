@@ -1,0 +1,22 @@
+package learning;
+
+
+public class CharacterCount
+ {
+
+	public static void main(String[] args) 
+{
+		String s="java is great";
+		String s1=s.replaceAll("\\s", "");
+		char[] c=s1.toCharArray();
+		int count=0;
+		for(char a:c)
+		{
+			count=count+1;
+		}
+		System.out.println("total number of character:  "+count);
+}
+	
+}
+output:
+total number of character:  11
