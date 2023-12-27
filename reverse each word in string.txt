@@ -1,0 +1,32 @@
+package learning;
+
+
+
+public class ReverseEachWord
+{
+
+	public static void main(String[] args) 
+	{
+		String s="java is fun";
+		String[]s1=s.split(" ");
+		int r=s1.length;
+		
+		for(int i=0;i<r;i++)
+		{
+			char[]c=s1[i].toCharArray();
+			
+			int l=s1[i].length();
+			
+			for(int j=l-1;j>=0;j--)
+			{
+				
+			  System.out.print(c[j]+" ");
+			}
+              }
+		
+	}
+}
+
+output:
+
+a v a j s i n u f 
