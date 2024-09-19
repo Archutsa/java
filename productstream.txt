@@ -1,0 +1,45 @@
+package first;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class ProductStream {
+
+	public static void main(String[] args) {
+		ArrayList<Product> l=new ArrayList<Product>();
+		l.add(new Product(1,"Hp Laptop",30000));
+		l.add(new Product(2,"Dell Laptop",25000));
+		l.add(new Product(3,"Apple Laptop",100000));
+		l.add(new Product(4,"Ip Laptop",20000));
+		System.out.println(l);
+		Comparator<Product> s=(a,b)->a.name.compareTo(b.name);
+		l.sort(s);
+		System.out.println(l);
+		List<String> p=l.stream().filter(a->a.price>25000).map(a->a.name).collect(Collectors.toList());
+		System.out.println(p);
+		List<String> i=l.stream().filter(a->a.id>2).map(a->a.name).collect(Collectors.toList());
+		System.out.println(i);
+		    
+		
+	}
+
+}
+class Product
+{
+	int id;
+	String name;
+	int price;
+	Product(int id,String name,int price)
+	{
+		this.id=id;
+		this.name=name;
+		this.price=price;
+	}
+	public String toString()
+	{
+		return this.id+" "+this.name+" "+this.price;
+	}
+}
+
