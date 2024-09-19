@@ -1,0 +1,48 @@
+package first;
+
+public class SaddlePointMatrix {
+
+	public static void main(String[] args) {
+		int a[][]= {{6,3,1},{9,7,8},{2,4,5}};
+		int rl=a.length;
+		int cl=a[0].length;
+		int saddalpoint=0;
+		
+		for(int i=0;i<rl;i++)
+		{  int count=0;
+			int min=a[i][0];
+			
+			for(int j=0;j<cl;j++)
+			{
+			if(a[i][j]<=min)
+			{
+				min=a[i][j];
+				count++;
+			}
+			}
+			int max=a[0][count-1];
+			
+			
+			for(int k=0;k<cl;k++)
+			{
+				if(a[k][count-1]>=max)
+				{
+					max=a[k][count-1];
+			    }
+			}
+			if(max==min)
+			{
+				saddalpoint=max;
+				System.out.println("SaddalPonit is: "+saddalpoint);
+				System.out.println("Rows min: "+min+" Columns max: "+max);
+			}
+			
+			}
+	}
+
+}
+
+output:
+
+SaddalPonit is: 7
+Rows min: 7 Columns max: 7
