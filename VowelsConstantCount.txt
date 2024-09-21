@@ -1,0 +1,32 @@
+package first;
+
+public class VowelsConstantCount {
+
+	public static void main(String[] args) {
+		String s="ae#zyui&bc*";
+		char[]c=s.toCharArray();
+		int vow=0;int con=0;int syb=0;
+		for(int i=0;i<c.length;i++)
+		{
+			if(c[i]=='a' || c[i]=='e' || c[i]=='i' || c[i]=='o' || c[i]=='u')
+				vow++;
+			else if(c[i]>='a' && c[i]<='z')
+				con++;
+			else
+				syb++;
+				
+				
+		}
+		System.out.println("vowels: "+vow);
+		System.out.println("constant: "+con);
+		System.out.println("symbols: "+syb);
+
+	}
+
+}
+
+output:
+
+vowels: 4
+constant: 4
+symbols: 3
