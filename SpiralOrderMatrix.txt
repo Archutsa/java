@@ -1,0 +1,41 @@
+package first;
+
+public class SpiralOrderMatrix 
+{
+public static void main(String[] args) 
+{
+		int a[][]= {{1,2,3,},{4,5,6},{7,8,9}};
+		int b[][]=new int[a.length][a[0].length];
+		int count=1;
+		for(int i=0;i<a.length;i++)
+		 {
+		   for(int j=0;j<a[0].length;j++)
+			{
+				
+			   if(i==0) 
+			     System.out.print(a[i][j]+" ");
+			   if(count==i && j==a[0].length-1)
+			     System.out.print(a[i][j]+" ");
+			   if(i==a.length-1 && j==a[0].length-1)
+			     {
+				  for(int k=a[0].length-1;k>=0;k--)
+				    {
+					  System.out.print(a[i][k]+" ");
+				    }
+			     }
+			  
+			 }
+		 }
+		for(int i=a.length-2;i==a.length-2;i--) 
+                 {
+			for(int j=0;j<a[0].length-1;j++)
+			 {
+				System.out.print(a[i][j]+" "); 
+                         }
+		}
+}
+
+}
+output:
+
+1 2 3 6 9 8 7 4 5 
