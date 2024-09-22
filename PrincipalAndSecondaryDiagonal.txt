@@ -1,0 +1,44 @@
+package first;
+
+public class PrincipalAndSecondaryDiagonal {
+public static void main(String[] args) {
+                int a[][]= {{1,2,3,4},{4,3,2,1},{7,8,9,6},{6,5,4,3}};
+	        int k=0;
+		int z=0;
+		int sum=0;
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a[0].length;j++)
+			{
+				if(i==k &&  j==z)
+				{
+					
+					sum=sum+a[i][j];
+				}
+			}
+			k++;z++;
+		}
+		System.out.println("principal Diagonal : "+sum);
+		int s=0;
+		int x=a[0].length-1;
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a[0].length;j++)
+			{
+				if(j==x)
+				{
+					s=s+a[i][j];
+				}
+			}
+			x--;
+		}
+		System.out.println("Secondary diagonal : "+s);
+
+	}
+
+}
+output
+
+principal Diagonal : 16
+Secondary diagonal : 20
+
