@@ -1,0 +1,29 @@
+package second;
+
+import java.sql.*;
+
+public class Samplejdbc {
+
+	public static void main(String[] args) throws SQLException {
+		String url="jdbc:mysql://localhost:3306/jdbc";
+		String username="root";
+		String password="archu";
+		String query="select * from passenger";
+		Connection con=DriverManager.getConnection(url,username,password);
+		Statement st=con.createStatement();
+		ResultSet rs=st.executeQuery(query);
+		rs.next();
+		System.out.println("id is"+rs.getInt(1));
+		System.out.println("name is"+rs.getString(2));
+		System.out.println("address is"+rs.getString(3));
+		con.close();
+		
+
+	}
+
+}
+output:
+
+id is 1
+name is archu
+address is chennai
