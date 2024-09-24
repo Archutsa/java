@@ -1,0 +1,27 @@
+package first;
+
+public class Table {
+
+	public static void main(String[] args) {
+		int n=2;
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(n*i);
+		}
+
+	}
+
+}
+
+output:
+
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
