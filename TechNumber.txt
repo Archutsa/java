@@ -1,0 +1,30 @@
+package first;
+
+public class TechNumber {
+
+	public static void main(String[] args) 
+	{
+		for(int i=1000;i<=10000;i++)
+		{
+		int n=i;
+		int k=n/100;
+		int l=n%100;
+		int s=k+l;
+		int f=s*s;
+		
+		if(n==f)
+		{
+			System.out.println(n+"=="+f);
+		}
+
+	}
+		}
+
+}
+
+output:
+
+2025==2025
+3025==3025
+9801==9801
+10000==10000
