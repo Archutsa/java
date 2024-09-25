@@ -1,0 +1,28 @@
+package first;
+
+public class SumArray {
+
+	public static void main(String[] args) {
+		int a[]= {4,5,7,11,9,13,8,12};
+		int sum=20;
+		
+		for(int i=0;i<a.length;i++)
+		{
+			int s=0;
+			for(int j=i+1;j<a.length;j++)
+			{
+				s=a[i]+a[j];
+				if(sum==s)
+					System.out.println("("+a[i]+","+a[j]+")");
+			}
+		}
+
+	}
+
+}
+
+output:
+
+(7,13)
+(11,9)
+(8,12)
