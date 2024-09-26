@@ -1,0 +1,55 @@
+package first;
+
+public class Square {
+
+	public static void main(String[] args)
+	{
+		for(int j=1;j<=1000;j++)
+		{
+	    int n=j;
+	    int k=n+1;
+	    for(int i=1;i<=1000;i++)
+	     {
+		  if(k==i*i)
+		  {
+			 System.out.println(k +"--square of--: "+i);
+		  }
+		 
+	 }
+		}
+
+	}
+
+}
+output:
+
+4--square of--: 2
+9--square of--: 3
+16--square of--: 4
+25--square of--: 5
+36--square of--: 6
+49--square of--: 7
+64--square of--: 8
+81--square of--: 9
+100--square of--: 10
+121--square of--: 11
+144--square of--: 12
+169--square of--: 13
+196--square of--: 14
+225--square of--: 15
+256--square of--: 16
+289--square of--: 17
+324--square of--: 18
+361--square of--: 19
+400--square of--: 20
+441--square of--: 21
+484--square of--: 22
+529--square of--: 23
+576--square of--: 24
+625--square of--: 25
+676--square of--: 26
+729--square of--: 27
+784--square of--: 28
+841--square of--: 29
+900--square of--: 30
+961--square of--: 31
