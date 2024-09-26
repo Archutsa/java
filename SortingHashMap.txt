@@ -1,0 +1,27 @@
+package first;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.TreeMap;
+
+public class SortingHashMap {
+
+	public static void main(String[] args) {
+		HashMap<String,Integer> s=new HashMap<String,Integer>();
+		s.put("sara",1 );
+		s.put("archu",2 );
+		s.put("zoya",3 );
+		s.put("rithu",4);
+		s.put("ravi",5 );
+		System.out.println("before sort: "+s);
+		TreeMap<String,Integer>t=new TreeMap<String,Integer>(s);
+		System.out.println("after sort: "+t);
+		
+
+	}
+
+}
+
+output:
+before sort: {archu=2, zoya=3, ravi=5, sara=1, rithu=4}
+after sort: {archu=2, ravi=5, rithu=4, sara=1, zoya=3}
