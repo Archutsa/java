@@ -1,0 +1,24 @@
+package first;
+
+public class SeriesGP {
+
+	public static void main(String[] args) {
+		 int a=2,r=2,n=4,j=1,k=0;
+		 for(int i=a;i<=20;)
+		 {
+			 if(j==n)
+			 {
+				 k=i;
+			 }
+			 System.out.print(i+" ");
+			 i=i*r;
+			 j++;
+		 }
+		 System.out.println("4th term is:"+k);
+
+	}
+
+}
+
+output:
+2 4 8 16 4th term is:16
