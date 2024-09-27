@@ -1,0 +1,28 @@
+package first;
+
+public class SeriesAP {
+
+	public static void main(String[] args) {
+		int a1=2;
+		int a2=3;
+		int n=4;
+		int j=1,k=0;
+		int diff=a2-a1;
+		for(int i=a1;i<=10;)
+		{
+			if(j==n)
+			{
+				k=i;
+			}
+			System.out.print(i+",");
+			i=i+diff;
+	        j++;
+		}
+		System.out.println("thus,4th term is :"+k);
+
+	}
+
+}
+
+output:
+2,3,4,5,6,7,8,9,10,thus,4th term is :5
