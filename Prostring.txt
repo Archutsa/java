@@ -1,0 +1,38 @@
+package first;
+
+
+
+public class Prostring {
+
+	public static void main(String[] args) {
+
+   String s="FUNSS";
+   char[] c=s.toCharArray();
+   int length= c.length;
+   for(char ch:c)
+   {
+	   System.out.println(ch);
+   }
+   for(int i=0;i<length-1;i++)
+   {
+	   int j=i+1;
+	   System.out.println(c[i]+" "+c[j]);
+   }
+   System.out.println(s);
+
+	}
+
+}
+
+output:
+
+F
+U
+N
+S
+S
+F U
+U N
+N S
+S S
+FUNSS
