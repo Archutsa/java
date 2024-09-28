@@ -1,0 +1,32 @@
+package first;
+
+public class PronucNumber {
+
+	public static void main(String[] args) 
+	{ int c=0;
+	int n=979;
+	int k=0;
+		for(int i=1;i<n;i++)
+		{
+			for(int j=i;j<=i;j++)
+			{
+				j=i+1;
+				c=i*j;
+				if(c==n) 
+				{
+					System.out.println(n+" is  Pronic Number");
+				    System.out.println(i+" * "+j+" = "+c);
+				    k=c;
+				}
+				
+			}
+		}
+		if(k!=n)
+			System.out.println(n+" is not Pronic Number ");
+
+	}
+
+}
+
+output:
+979 is not Pronic Number 
