@@ -1,0 +1,34 @@
+package first;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
+public class RemoveDuplicateArrayList {
+
+	public static void main(String[] args) {
+		ArrayList<String> a=new ArrayList<String>();
+		a.add("java");
+		a.add("j2ee");
+		a.add("jsp");
+		a.add("java");
+		a.add("servelet");
+		a.add("structs");
+		a.add("jsp");
+		System.out.println("ArrayList With Duplicate: "+a);
+		Set<String> s=new HashSet<String>(a);
+		//System.out.println(s);
+		
+		for(String s1:a)
+		{
+			s.add(s1);
+		}
+		System.out.println("ArrayList After Removing Duplicate: "+s);
+
+	}
+
+}
+
+output
+ArrayList With Duplicate: [java, j2ee, jsp, java, servelet, structs, jsp]
+ArrayList After Removing Duplicate: [java, structs, jsp, j2ee, servelet]
