@@ -1,0 +1,18 @@
+package first;
+
+public class PerfactSquare {
+
+	public static void main(String[] args) {
+		int n=9;
+		for(int i=1;i<n;i++)
+		{
+          int j=i*i;
+          if(j<n)
+        	  System.out.println(j);
+      	}
+	}
+}
+output:
+
+1
+4
