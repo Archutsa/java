@@ -1,0 +1,43 @@
+package first;
+
+public class PrimeFact {
+
+	public static void main(String[] args) {
+		int n=24;
+		int j=0;
+		int d1=0;int max=1;
+		for(int i=2;i<=24;i++)
+		{
+			int c=0;
+			if(n%i==0) 
+			{
+				 j=i;
+				 
+			}
+			for(int k=1;k<=j;k++)
+			{
+				if(j%k==0)
+				{
+					c=c+1;
+					
+				}
+			}
+			if(c==2) 
+			{
+				d1=j;
+				System.out.println(j);
+			}
+				
+				if(d1>max)
+				{max=d1;}
+		}
+		System.out.print("largest prime factor: "+max);
+	}
+
+}
+
+output:
+
+2
+3
+largest prime factor: 3
