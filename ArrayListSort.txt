@@ -1,0 +1,28 @@
+package first;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class ArrayListSort {
+
+public static void main(String[] args) 
+{
+  ArrayList a=new ArrayList<>();
+  a.add(2);
+  a.add(3);
+  a.add(1);
+  a.add(5);
+  a.add(4);
+  System.out.print(a);
+  Set s=new HashSet(a);
+  System.out.println(s);
+
+	}
+
+}
+output:
+
+[2, 3, 1, 5, 4]
+[1, 2, 3, 4, 5]
