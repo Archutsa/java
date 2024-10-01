@@ -1,0 +1,25 @@
+package first;
+
+public class ClosestNumber {
+
+	public static void main(String[] args) {
+		int n=33,m=4;
+		int closet=0,k=1;
+		for(int i=1;i<=10;i++)
+		{
+			if(k<=n)
+			{
+				closet=k;
+			}
+			k=i*4;
+			System.out.print(k+" ");
+		}
+		
+        System.out.println("closet number is:"+closet);
+	}
+
+}
+
+output:
+
+4 8 12 16 20 24 28 32 36 40 closet number is:32
