@@ -1,0 +1,32 @@
+package first;
+
+public class ChageCharacter {
+
+	public static void main(String[] args) {
+		String s="ApPLe";
+		char[]c=s.toCharArray();
+		String s1="";
+		for(int i=0;i<c.length;i++)
+		{
+			if(c[i]>='a'&& c[i]<='z')
+			{
+		   int j=(int)c[i]-32;
+		    
+		    s1=s1+(char)j;
+			}
+			else
+			{
+				int j=(int)c[i]+32;
+				//System.out.print((char)j);
+				s1=s1+(char)j;
+			}
+		}
+		System.out.println(s1);
+		
+
+	}
+
+}
+
+output:
+aPplE
