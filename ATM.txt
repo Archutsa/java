@@ -1,0 +1,86 @@
+package first;
+
+import java.util.Scanner;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		int balance=10000;
+		while(true) {
+		System.out.println("ATM");
+		System.out.println("choose 1 for withdraw");
+		System.out.println("choose 2 for deposite");
+		System.out.println("choose 3 for balance");
+		System.out.println("choose 4 for exit");
+		
+		Scanner in=new Scanner(System.in);
+		System.out.println("please enter your choices: ");
+		int choice=in.nextInt();
+		switch(choice)
+		{
+		case 1:
+			Scanner w=new Scanner(System.in);
+			System.out.println("enter the amount : ");
+			int m=w.nextInt();
+			if(m<balance)
+			{
+				System.out.println("take your amount");
+			}
+			else
+			{
+				System.out.println("sorry no balance to take it");
+			}
+			break;
+		case 2:
+			Scanner d=new Scanner(System.in);
+			int dp=d.nextInt();
+			balance=balance+dp;
+			System.out.println(dp+"  Successfully deposite ");
+			break;
+		case 3:
+			System.out.println("your balance is : "+balance);
+			break;
+		case 4:
+			System.exit(0);
+		}
+	}
+
+}}
+output:
+
+ATM
+choose 1 for withdraw
+choose 2 for deposite
+choose 3 for balance
+choose 4 for exit
+please enter your choices: 
+1
+enter the amount : 
+2000
+take your amount
+ATM
+choose 1 for withdraw
+choose 2 for deposite
+choose 3 for balance
+choose 4 for exit
+please enter your choices: 
+2
+enter the amount : 
+3000
+3000  Successfully deposite 
+ATM
+choose 1 for withdraw
+choose 2 for deposite
+choose 3 for balance
+choose 4 for exit
+please enter your choices: 
+3
+your balance is : 13000
+ATM
+choose 1 for withdraw
+choose 2 for deposite
+choose 3 for balance
+choose 4 for exit
+please enter your choices: 
+4
+
