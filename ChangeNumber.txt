@@ -1,0 +1,67 @@
+package first;
+
+import java.util.Scanner;
+
+public class ChangeNumber {
+
+	public static void main(String[] args) {
+		int a[]= {1,3,4,5,6,7,8,9};
+		int b[]=new int[a.length];
+		int count=0;
+		int last=0;
+		int just=0;
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter which number you want swap: ");
+		int n=s.nextInt();
+		for(int i=0;i<a.length;i++) {
+			if(a[i]==n)
+			{
+				for(int j=i+1;j<a.length;j++)
+				{
+				 last++;	
+				}
+			}
+		}
+		for(int i=0;i<a.length;i++)
+		{
+			count++;
+			if(count>2 && last>=2) {
+				
+				
+			if(a[i]==n)
+			{
+				just=1;
+		  for(int r=0;r<i-2;r++)
+			   {
+				System.out.print(a[r]+" ");
+			    }
+				for(int j=i+1;j<=i+2;j++)
+				{
+					
+				 System.out.print(a[j]+" ");
+				}
+				System.out.print(a[i]+" ");
+				for(int k=i-2;k<i;k++)
+				{
+					System.out.print(a[k]+" ");
+				}
+				for(int k=i+3;k<a.length;k++)
+				{
+					System.out.print(a[k]+" ");
+				}
+			}}
+			
+			
+		}
+		if(last<2 || just<1)
+			System.out.println("no found next 2 numbers: ");		
+
+	}
+
+}
+
+output:
+
+enter which number you want swap: 
+6
+1 3 7 8 6 4 5 9 
