@@ -1,0 +1,41 @@
+package first;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class CountLetter {
+
+	public static void main(String[] args) {
+		String s="Butter Better";
+		String str=s.replaceAll("\\s","");
+		char[]c=str.toCharArray();
+		HashMap<Character,Integer> m=new HashMap<Character,Integer>();
+		for(char d:c)
+		{
+			if(m.containsKey(d))
+			{
+				m.put(d,m.get(d)+1);
+			}
+			else
+			{
+				m.put(d, 1);
+			}
+		}
+		Set<Map.Entry<Character,Integer>> e=m.entrySet();
+		for(Map.Entry<Character,Integer> me:e)
+		{
+			System.out.println(me.getKey()+": "+me.getValue());
+		}
+
+	}
+
+}
+
+output:
+
+B: 2
+r: 2
+t: 4
+u: 1
+e: 3
