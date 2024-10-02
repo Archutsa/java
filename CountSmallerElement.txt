@@ -1,0 +1,24 @@
+package first;
+
+public class CountSmallerElement {
+
+	public static void main(String[] args) {
+		int x=2;int count=0;
+		int a[]= {10,1,2,8,4,2,2,5};
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]<=x)
+			{
+				count++;
+			}
+		}
+		System.out.println("number of lesser number in x: "+count);
+		
+
+	}
+
+}
+
+output:
+
+number of lesser number in x: 4
