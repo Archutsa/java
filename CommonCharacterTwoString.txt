@@ -1,0 +1,45 @@
+package first;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class CommonCharacterTwoString {
+
+	public static void main(String[] args) {
+		String s1="thin sticks";
+		String s2="thick bricks";
+		String s3=s1.replace(" ","");
+		String s4=s2.replace(" ","");
+		
+		char[]c1=s3.toCharArray();
+		char[]c2=s4.toCharArray();
+		HashMap<Character,Integer> m=new HashMap<Character,Integer>();
+		for(char d1:c1)
+		{
+			for(int i=0;i<c2.length;i++)
+			{
+				if(c2[i]==d1)
+				{
+					if(m.containsKey(d1))
+					{
+						m.put(d1,m.get(d1)+1);
+					}
+					else
+						m.put(d1, 1);
+				}
+			}
+		}
+		Set<Map.Entry<Character,Integer>> s=m.entrySet();
+		
+		for(Map.Entry<Character,Integer> e:s)
+		{
+			System.out.print(e.getKey()+" ");
+		}
+		
+	}
+
+}
+output:
+s c t h i k 
