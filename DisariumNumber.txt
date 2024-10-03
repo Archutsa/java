@@ -1,0 +1,36 @@
+package first;
+
+public class DisariumNumber {
+
+	public static void main(String[] args) {
+		int a=135;
+		int t=a;int sum=0;
+		int d1=0,d2=0,d3=0;
+		while(t>0)
+		{
+			d1=t%10;
+			t/=10;
+			
+			
+			d2=t%10;
+			t/=10;
+			
+			d3=t%10;
+			t/=10;
+			
+			sum=(d1*d1*d1)+(d2*d2)+(d3);
+			
+			
+		}
+		if(a==sum)
+		{
+			System.out.println(a+" is Disarium Number")	;
+		}
+		else
+			System.out.println(a+" is not a Disarium Number")	;
+	}
+
+}
+
+output:
+135 is Disarium Number
