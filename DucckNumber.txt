@@ -1,0 +1,22 @@
+package first;
+
+public class DucckNumber {
+
+	public static void main(String[] args) {
+		int n=35;
+		int i=0;
+		int t=n;
+		while(t>0)
+		{
+			i=t%2;
+			int r=0;
+			r=r*1+i;
+			System.out.print(i);
+			t/=2;
+		}
+	}
+
+}
+
+output:
+110001
