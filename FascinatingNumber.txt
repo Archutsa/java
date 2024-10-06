@@ -1,0 +1,53 @@
+package first;
+
+public class FascinatingNumber {
+
+	public static void main(String[] args) {
+		int n=328;
+		int s=n*2;
+		int t=n*3;
+		
+		String num=n+""+s+""+t;
+		
+		
+		int l=num.length();
+		int c=0;
+		System.out.println(l);
+		System.out.println(num);
+		for(int i=0;i<l;i++)
+		{
+			char f=num.charAt(i);
+			
+			if(f=='1'||f=='2'||f=='3'||f=='4'||f=='5'||f=='6'||f=='7'||f=='8'||f=='9')
+			{
+				c++;
+				System.out.println("-"+c);
+			}
+		}
+			
+			if(c==l)
+			{
+				System.out.println("yes");
+			}
+			else
+			{
+				System.out.println("no");
+			}
+	}
+
+}
+
+output:
+
+9
+328656984
+-1
+-2
+-3
+-4
+-5
+-6
+-7
+-8
+-9
+yes
