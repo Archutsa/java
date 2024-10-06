@@ -1,0 +1,59 @@
+package first;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class FirstNonRepetedAndRepeted
+ {
+
+	public static void main(String[] args) 
+{
+		String s="JavaConceptOfTheDay";
+		String str=s.toLowerCase();
+		char[] c=str.toCharArray();
+		int nonrep=1;
+		int rep=1;
+		HashMap<Character,Integer> m=new HashMap<Character,Integer>();
+		for(char a:c)
+		{
+			if(m.containsKey(a))
+			 {
+				m.put(a, m.get(a)+1);
+			 }
+			else
+			 {
+				m.put(a, 1);
+			 }
+		}
+		Set<Map.Entry<Character,Integer>> e=m.entrySet();
+		
+		for(int i=0;i<c.length;i++)
+			{
+				for(Map.Entry<Character,Integer>me:e)
+				{
+					
+				if(nonrep==1) {
+				 if(c[i]==me.getKey() && me.getValue()==1)
+				 {
+					 System.out.println("first Nonrepeted: "+c[i]+" ");
+					 nonrep++;
+				 }
+}
+				if(rep==1)
+				if(c[i]==me.getKey() && me.getValue()>1)
+				{
+					System.out.println("first Repeted: "+c[i]+" ");
+					rep++;
+			    }
+		}
+
+	}
+
+}
+}
+
+output:
+
+first Nonrepeted: j 
+first Repeted: a 
