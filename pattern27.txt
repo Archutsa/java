@@ -1,0 +1,38 @@
+package first;
+
+public class Patterns 
+{
+
+	public static void main(String[] args) 
+{
+		
+		for(int i=7;i>=1;i--)
+		{
+			int k=1;
+			for(int j=1;j<=7;j++)
+			 {
+				if(j>=i)
+				 {
+					System.out.print(k);
+					k++;
+				 }
+				else
+					System.out.print("*");
+				
+			 }
+			
+			System.out.println();
+		}
+		
+
+}
+}
+output:
+******1
+*****12
+****123
+***1234
+**12345
+*123456
+1234567
+
