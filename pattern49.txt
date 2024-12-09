@@ -1,0 +1,31 @@
+package first;
+
+public class Use 
+{
+
+	public static void main(String[] args) 
+{
+	 
+	 for(int i=7;i>=1;i--)
+	 {
+		 char z='p';
+		 for(int j=1;j<=i;j++)
+		 {
+			 System.out.print(z);
+			 z++;
+		 }
+		 System.out.println();
+		 
+	 }
+}
+
+}
+output:
+
+pqrstuv
+pqrstu
+pqrst
+pqrs
+pqr
+pq
+p
