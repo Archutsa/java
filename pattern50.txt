@@ -1,0 +1,50 @@
+package first;
+
+public class Pattern
+ {
+
+	public static void main(String[] args) 
+{
+	 
+	 for(int i=1;i<=7;i++)
+	 {
+		 char z='A';
+		 for(int j=1;j<i;j++)
+			 System.out.print("  ");
+		 for(int j=i;j<=7;j++)
+		  {
+			 System.out.print(z+" ");
+			 z++;
+		  }
+		 System.out.println();
+		 
+	 }
+	 for(int i=2;i<=7;i++)
+	 {
+		 char c='A';
+		 for(int j=1;j<=7-i;j++)
+			 System.out.print("  ");
+		 for(int j=1;j<=i;j++)
+		  {
+			 System.out.print(c+" ");
+			 c++;
+		  }
+		 System.out.println();
+	 }
+}
+
+}
+output:
+A B C D E F G 
+  A B C D E F 
+    A B C D E 
+      A B C D 
+        A B C 
+          A B 
+            A 
+          A B 
+        A B C 
+      A B C D 
+    A B C D E 
+  A B C D E F 
+A B C D E F G 
